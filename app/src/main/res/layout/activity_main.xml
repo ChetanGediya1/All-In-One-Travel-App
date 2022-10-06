@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:layout_marginLeft="3dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/b2"
+                android:text="Traveling"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    android:id="@+id/maketrip"
+    android:layout_marginTop="80dp"
+    app:cardCornerRadius="10dp">
+
+    <ImageView
+        android:id="@+id/maketrip_logo"
+        android:layout_width="160dp"
+        android:background="@color/white"
+        android:layout_height="120dp"
+        android:src="@drawable/maketrip"/>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toEndOf="@id/maketrip"
+        android:layout_marginTop="80dp"
+
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/goib_logo"
+            android:background="@color/white"
+
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:src="@drawable/goib"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/irctc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/maketrip"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/irctc_logo"
+            android:layout_width="160dp"
+            android:background="@color/white"
+
+            android:layout_height="120dp"
+            android:src="@drawable/irctc"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/redbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/maketrip"
+        android:layout_marginLeft="25dp"
+        android:layout_toEndOf="@id/irctc"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/redbus_logo"
+            android:layout_width="160dp"
+            android:background="@color/white"
+
+            android:layout_height="120dp"
+            android:src="@drawable/redbus" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yatra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/irctc"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/yatra_logo"
+            android:layout_width="160dp"
+            android:background="@color/white"
+
+            android:layout_height="120dp"
+            android:src="@drawable/yatra"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/trivago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/redbus"
+        android:layout_marginLeft="25dp"
+        android:layout_toEndOf="@id/yatra"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/trivago_logo"
+            android:layout_width="160dp"
+            android:background="@color/white"
+
+            android:layout_height="120dp"
+            android:src="@drawable/trivago"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/airhub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/yatra"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/airhub_logo"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:src="@drawable/airhub"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cleantrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/trivago"
+        android:layout_marginLeft="25dp"
+        android:layout_toEndOf="@id/airhub"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/cleantrip_logo"
+            android:layout_width="160dp"
+            android:background="@color/white"
+            android:layout_height="120dp"
+            android:src="@drawable/cleantrip"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/expedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/airhub"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/expedia_logo"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:src="@drawable/expedia"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/uber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/cleantrip"
+        android:layout_marginLeft="25dp"
+        android:layout_toEndOf="@id/expedia"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/uber_logo"
+            android:layout_width="160dp"
+            android:background="@color/white"
+
+            android:layout_height="120dp"
+            android:src="@drawable/uber"/>
+
+    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/travelguru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/expedia"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/travelguru_logo"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:background="@color/white"
+
+                    android:src="@drawable/travelguru"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bookingcom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/uber"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/travelguru"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/bookingcom_logo"
+                    android:layout_width="160dp"
+                    android:background="@color/white"
+
+                    android:layout_height="120dp"
+                    android:src="@drawable/bookingcom" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
